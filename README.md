@@ -101,6 +101,15 @@ ethsigner --chain-id=2018 --http-listen-port=9545 --downstream-http-port=8545 fi
 
 ## Usage
 
+### Scripts
+
+There is a sample script in the `scripts` folder. It is using web3js-eea to send a private transaction to the network.
+
+To run the script:
+```
+node send-private-transaction.js
+```
+
 ### Logging
 
 If you need more control over logging, you can use the `log4j.xml` file in the `config` folder. To ensure Besu picks up the configuration, you can run:

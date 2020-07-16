@@ -7,3 +7,7 @@
 **/*orion1/routerdb
 **/*orion2/routerdb
 **/*orion3/routerdb
+
+**/*orion1/orion.ports
+**/*orion2/orion.ports
+**/*orion3/orion.ports
