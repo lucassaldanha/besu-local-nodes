@@ -1,10 +1,10 @@
 # besu-local-nodes
-Config for a 3 node Besu network (with privacy and permissioning)
+Configuration for a 3 nodes Besu network (with privacy and permissioning)
 
 Versions tested:
-Besu 1.5.0
-Orion 1.6.0
-EthSigner 0.6.0
+- Besu 1.5.0
+- Orion 1.6.0
+- EthSigner 0.6.0
 
 Besu node keys and ports
 
