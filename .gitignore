@@ -1,0 +1,9 @@
+**/*.DS_Store
+
+**/*besu1/data
+**/*besu2/data
+**/*besu3/data
+
+**/*orion1/routerdb
+**/*orion2/routerdb
+**/*orion3/routerdb
