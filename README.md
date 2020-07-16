@@ -99,7 +99,17 @@ To run EthSigner
 ethsigner --chain-id=2018 --http-listen-port=9545 --downstream-http-port=8545 file-based-signer --key-file=config/ethsigner/keyFile --password-file=config/ethsigner/passwordFile
 ```
 
-## Deleting data
+## Usage
+
+### Logging
+
+If you need more control over logging, you can use the `log4j.xml` file in the `config` folder. To ensure Besu picks up the configuration, you can run:
+
+```
+LOG4J_CONFIGURATION_FILE=config/besu/log4j.xml besu --config-file config/besu/besu1.conf
+```
+
+### Deleting data
 
 There is a helper script to delete all the data from Besu and Orion nodes. Just run:
 ```

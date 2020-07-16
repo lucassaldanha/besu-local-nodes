@@ -23,7 +23,7 @@
 
     <!-- Privacy -->
     <Logger name="org.hyperledger.besu.ethereum.privacy" level="INFO"/>
-    <Logger name="org.hyperledger.besu.ethereum.mainnet.precompiles.privacy" level="TRACE"/> 
+    <Logger name="org.hyperledger.besu.ethereum.mainnet.precompiles.privacy" level="INFO"/> 
     <!-- Migration -->
     <Logger name="org.hyperledger.besu.ethereum.privacy.storage.migration" level="INFO"/> 
     
