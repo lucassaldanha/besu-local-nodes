@@ -46,7 +46,7 @@ Here is the information about the 3 Besu nodes in the network:
 - WebSocket Endpoint
   - `http://localhost:8556`
 
-  **Besu 3**
+**Besu 3**
 - Enode URL
   - `enode://7da6d67d29a120a19f1d46566a03b3a59b2c55ab83fc4672ea233b4af8ce9545a27ffb968718c56052f389b84b95ae0535b1b66484652e8369169a2d903e32ba@127.0.0.1:50505`
 - JSON-RPC Endpoint
@@ -97,6 +97,13 @@ EthSigner can be used to sign transactions on behalf of the user. You don't need
 To run EthSigner
 ```
 ethsigner --chain-id=2018 --http-listen-port=9545 --downstream-http-port=8545 file-based-signer --key-file=config/ethsigner/keyFile --password-file=config/ethsigner/passwordFile
+```
+
+## Deleting data
+
+There is a helper script to delete all the data from Besu and Orion nodes. Just run:
+```
+./delete_databases.sh
 ```
 
 Using this config, EthSigner will start listening on port 9545 and communicating with Besu node 1. You can change the node that EthSigner sends transactions to by changing the `downstream-http-port` property.
