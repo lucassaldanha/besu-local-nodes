@@ -103,9 +103,9 @@ ethsigner --chain-id=2018 --http-listen-port=9545 --downstream-http-port=8545 fi
 
 ## Usage
 
-### Scripts
+### Examples
 
-There is a sample script in the `scripts` folder. It is using web3js-eea to send a private transaction to the network.
+There is a sample script in the `examples` folder. It is using web3js-eea to send a private transaction to the network.
 
 To run the script:
 ```
@@ -124,7 +124,7 @@ LOG4J_CONFIGURATION_FILE=config/besu/log4j.xml besu --config-file config/besu/be
 
 There is a helper script to delete all the data from Besu and Orion nodes. Just run:
 ```
-./delete_databases.sh
+./scripts/delete_databases.sh
 ```
 
 Using this config, EthSigner will start listening on port 9545 and communicating with Besu node 1. You can change the node that EthSigner sends transactions to by changing the `downstream-http-port` property.
