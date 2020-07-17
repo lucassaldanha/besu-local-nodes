@@ -62,6 +62,8 @@ Property Name | Description | Default Value
 `privacy-onchain-groups-enabled` | Enable flexible privacy groups | `false` for all 3 nodes
 `permissions-accounts-contract-enabled` | Enable onchain account permissioning | `false` for all 3 nodes
 `permissions-nodes-contract-enabled` | Enable onchain node permissioning | `false` for all 3 nodes
+`permissions-accounts-config-file-enabled` | Enable local account permissioning | `false` for all 3 nodes
+`permissions-nodes-config-file-enabled` | Enable local node permissioning | `false` for all 3 nodes
 
 ## Orion Nodes
 
