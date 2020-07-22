@@ -101,6 +101,8 @@ To run EthSigner
 ethsigner --chain-id=2018 --http-listen-port=9545 --downstream-http-port=8545 file-based-signer --key-file=config/ethsigner/keyFile --password-file=config/ethsigner/passwordFile
 ```
 
+Using this config, EthSigner will start listening on port 9545 and communicating with Besu node 1. You can change the node that EthSigner sends transactions to by changing the `downstream-http-port` property.
+
 ## Usage
 
 ### Examples
@@ -126,9 +128,6 @@ There is a helper script to delete all the data from Besu and Orion nodes. Just 
 ```
 ./scripts/delete_databases.sh
 ```
-
-Using this config, EthSigner will start listening on port 9545 and communicating with Besu node 1. You can change the node that EthSigner sends transactions to by changing the `downstream-http-port` property.
-
 ## References
 
 - [Besu GitHub project](https://github.com/hyperledger/besu/)
