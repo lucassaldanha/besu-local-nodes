@@ -3,9 +3,12 @@
 This project has all configuration that you need to start a network with 3 nodes using privacy and permissioning.
 
 Application versions tested:
-- Besu 1.5.0
+- Besu 1.5.4
 - Orion 1.6.0
-- EthSigner 0.6.0
+- EthSigner 0.7.1
+
+Integration libraries versions tested:
+- Web3js-eea 0.10.0
 
 ## Ethereum Accounts
 
