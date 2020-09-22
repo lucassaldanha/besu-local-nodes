@@ -9,7 +9,7 @@ Application versions tested:
 
 ## Ethereum Accounts
 
-The network has 3 accounts with pre-loaded ether that you can use to send transanctions.
+The network has 3 accounts with pre-loaded ether that you can use to send transactions.
 
 You can use the private key of these accounts to load them on Metamask.
 
@@ -128,6 +128,19 @@ There is a helper script to delete all the data from Besu and Orion nodes. Just 
 ```
 ./scripts/delete_databases.sh
 ```
+
+### Advanced usage - multi-tenancy
+
+Using multi-tenancy requires a few different options so separate config files are provided for Besu and Orion.
+
+The following commands start orion1 and 2 with 3 users each, and besu with multi-tenancy enabled:
+```
+orion config/orion/orion1-multi-tenancy.conf
+besu --config-file config/besu/besu1-multi-tenancy.conf
+orion config/orion/orion2-multi-tenancy.conf
+besu --config-file config/besu/besu2-multi-tenancy.conf
+```
+
 ## References
 
 - [Besu GitHub project](https://github.com/hyperledger/besu/)
