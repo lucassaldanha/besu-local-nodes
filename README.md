@@ -133,13 +133,41 @@ There is a helper script to delete all the data from Besu and Orion nodes. Just 
 
 Using multi-tenancy requires a few different options so separate config files are provided for Besu and Orion.
 
-The following commands start orion1 and 2 with 3 users each, and besu with multi-tenancy enabled:
+The following commands start orion1 and 2 with 3 users each, and besu with multi-tenancy enabled. Besu keys are as above. 
 ```
 orion config/orion/orion1-multi-tenancy.conf
 besu --config-file config/besu/besu1-multi-tenancy.conf
 orion config/orion/orion2-multi-tenancy.conf
 besu --config-file config/besu/besu2-multi-tenancy.conf
 ```
+
+**Orion 1**
+- Public Key 1-0
+  - `GGilEkXLaQ9yhhtbpBT03Me9iYa7U/mWXxrJhnbl1XY=`
+- Public Key 1-1
+  - `JhOQwapQgv36ENsICu4K21YoeU+vFLvEU/Hnt/Fcoxc=`
+- Public Key 1-2
+  - `dyKxmO5Ji7d8aZTXvk02x98l6oB9Q4MBTq6W4tIW+AM=`
+
+**Orion 2**
+- Public Key 2-0
+  - `KkOjNLmCI6r+mICrC6l+XuEDjFEzQllaMQMpWLl4y1s=`
+- Public Key 2-1
+  - `9OFzZ4gctN2RG0CGLA+7aNspeT2d3Paej8Pn6MjWAhk`
+- Public Key 2-2
+  - `rc2C5ldkby2W4PVgKRnKNx0Uw2pxjaKmq6ayZv1+8HU=`
+
+You can then use the provided `privateKey1.pem` and `publicKey1.pem` to create JWT tokens for each Orion public key used on Orion1, and `privateKey2.pem` and `publicKey2.pem` to create JWT tokens for each Orion public key used on Orion2. An example JSON payload to create the JWT token:
+
+```json
+{
+  "permissions": ["*:*"],
+  "privacyPublicKey": "2UKH3VJThkOoKskrLFpwoxCnnRARyobV1bEdgseFHTs=",
+  "exp": 1600899999002
+}
+```
+Where the `privacyPublicKey` is the Orion public key, and the `exp` is an expiry time in the future (eg get from https://currentmillis.com/). 
+
 
 ## References
 
