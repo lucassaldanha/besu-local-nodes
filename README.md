@@ -40,6 +40,8 @@ Here is the information about the 3 Besu nodes in the network:
   - `http://localhost:8545`
 - WebSocket Endpoint
   - `http://localhost:8546`
+- Node Key
+  - Associated Account: 0x96A0495677e7227DB792FFeE7978557300c017EF
 
 **Besu 2**
 - Enode URL
@@ -48,14 +50,18 @@ Here is the information about the 3 Besu nodes in the network:
   - `http://localhost:8555`
 - WebSocket Endpoint
   - `http://localhost:8556`
+- Node Key
+  - Associated Account: 0x866b0df7138dAF807300Ed9204DE733c1eB6d600
 
 **Besu 3**
 - Enode URL
-  - `enode://7da6d67d29a120a19f1d46566a03b3a59b2c55ab83fc4672ea233b4af8ce9545a27ffb968718c56052f389b84b95ae0535b1b66484652e8369169a2d903e32ba@127.0.0.1:50505`
+  - `enode://261bc642fb9f8aab639a8d5d2dc4192a02288859f7e10f23f2bb7b60d96b1c2d875d866074072f7bf01d0de5bfe4ccdb65a32a72668403b37eb6f3eb6b576ab1@127.0.0.1:50505`
 - JSON-RPC Endpoint
   - `http://localhost:8565`
 - WebSocket Endpoint
   - `http://localhost:8566`
+- Node Key
+  - Associated Account: 0xA46F0935DE4176FfeCCDEeCAf3c6E3ca03e31B22
 
 ### Useful Properties
 Property Name | Description | Default Value
