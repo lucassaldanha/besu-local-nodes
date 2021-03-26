@@ -1,5 +1,5 @@
 #!/bin/bash
-echo 'Deleting Besu and Orion databases'
+echo 'Deleting Besu, Tessera and Orion databases'
 
 rm -rf workdir/orion1/routerdb workdir/orion1/orion.ports
 rm -rf workdir/orion2/routerdb workdir/orion2/orion.ports
