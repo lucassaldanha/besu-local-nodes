@@ -10,6 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "web3-eea": "0.10.0",
-    "lodash": ">=4.17.19"
+    "lodash": ">=4.17.21"
   }
 }
