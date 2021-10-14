@@ -57,3 +57,5 @@ fabric.properties
 
 .gradle/
 build/
+
+.project
