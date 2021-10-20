@@ -10,6 +10,9 @@
     </Console>
   </Appenders>
   <Loggers>
+    <!-- Vertx Blocked Thread Checker -->
+    <logger name="io.vertx.core.impl.BlockedThreadChecker" level="OFF" />
+
     <!-- Netty and DevP2P -->
     <Logger name="org.hyperledger.besu.ethereum.p2p.netty" level="INFO"/>
     <Logger name="org.hyperledger.besu.ethereum.p2p.netty.NettyPeerConnection" level="INFO"/>
