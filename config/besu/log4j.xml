@@ -39,10 +39,16 @@
     <Logger name="org.hyperledger.besu.ethereum.eth.sync" level="INFO"/>
     <Logger name="org.hyperledger.besu.ethereum.eth.sync.BlockPropagationManager" level="INFO"/>
 
+    <!-- EVM -->
+    <Logger name="org.hyperledger.besu.evm" level="INFO"/>
+
     <!-- RPC APIs -->
     <Logger name="org.hyperledger.besu.ethereum.api.jsonrpc" level="INFO"/>
     <Logger name="org.hyperledger.besu.ethereum.api.jsonrpc.websocket" level="INFO"/>
     <Logger name="net.consensys.orion.http.server.vertx.HttpErrorHandler" level="OFF"/>
+
+    <!-- QBFT -->
+    <Logger name="org.hyperledger.besu.consensus.qbft" level="INFO"/>
 
     <Root level="${sys:root.log.level}">
       <AppenderRef ref="Console" />
