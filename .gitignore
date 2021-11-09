@@ -11,3 +11,5 @@
 **/*orion1/orion.ports
 **/*orion2/orion.ports
 **/*orion3/orion.ports
+
+config/besu/qbftConfig
