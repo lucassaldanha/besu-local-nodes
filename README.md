@@ -27,9 +27,9 @@ Account Address | Private Key
 To start a Besu node, execute the following command:
 ```
 besu --config-file config/besu/besu1.conf
+besu --config-file config/besu/besu2.conf
+besu --config-file config/besu/besu3.conf
 ```
-
-Replace the config file name for each of the other config files (`besu1.conf`, `besu2.conf`, `besu3.conf`).
 
 Here is the information about the 3 Besu nodes in the network:
 
@@ -68,11 +68,13 @@ Property Name | Description | Default Value
 `permissions-accounts-config-file-enabled` | Enable local account permissioning | `false` for all 3 nodes
 `permissions-nodes-config-file-enabled` | Enable local node permissioning | `false` for all 3 nodes
 
-## Orion Nodes
+## Tessera Nodes
 
-To start an Orion node, execute the following command:
+To start a Tessera node, execute the following command:
 ```
-orion config/orion/orion1.conf
+tessera -configfile config/orion/tessera1.conf
+tessera -configfile config/orion/tessera2.conf
+tessera -configfile config/orion/tessera3.conf
 ```
 
 Replace the config file name for each of the other config files (`orion1.conf`, `orion2.conf`, `orion3.conf`).
