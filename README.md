@@ -3,9 +3,9 @@
 This project has all configuration that you need to start a network with 3 nodes using privacy and permissioning.
 
 Application versions tested:
-- Besu 21.1.2
-- Orion 20.10.1
-- EthSigner 21.3.0
+- Besu 22.4.0
+- Tessera 22.1.1
+- EthSigner 22.1.3
 
 Integration libraries versions tested:
 - Web3js-eea 0.10.0
@@ -27,9 +27,9 @@ Account Address | Private Key
 To start a Besu node, execute the following command:
 ```
 besu --config-file config/besu/besu1.conf
+besu --config-file config/besu/besu2.conf
+besu --config-file config/besu/besu3.conf
 ```
-
-Replace the config file name for each of the other config files (`besu1.conf`, `besu2.conf`, `besu3.conf`).
 
 Here is the information about the 3 Besu nodes in the network:
 
@@ -74,29 +74,31 @@ Property Name | Description | Default Value
 `permissions-accounts-config-file-enabled` | Enable local account permissioning | `false` for all 3 nodes
 `permissions-nodes-config-file-enabled` | Enable local node permissioning | `false` for all 3 nodes
 
-## Orion Nodes
+## Tessera Nodes
 
-To start an Orion node, execute the following command:
+To start a Tessera node, execute the following command:
 ```
-orion config/orion/orion1.conf
+tessera -configfile config/tessera/tessera1.conf
+tessera -configfile config/tessera/tessera2.conf
+tessera -configfile config/tessera/tessera3.conf
 ```
 
-Replace the config file name for each of the other config files (`orion1.conf`, `orion2.conf`, `orion3.conf`).
+Replace the config file name for each of the other config files (`tessera1.conf`, `tessera2.conf`, `tessera3.conf`).
 
-To send private transactions, you should use the Orion node public key to indentify the participants of a transaction (privateFor field).
+To send private transactions, you should use the Tessera node public key to indentify the participants of a transaction (privateFor field).
 
-Here is the information about the 3 Orion nodes in the network
+Here is the information about the 3 Tessera (enclave) nodes in the network
 
 
-**Orion 1**
+**Tessera 1**
 - Public Key
   - `GGilEkXLaQ9yhhtbpBT03Me9iYa7U/mWXxrJhnbl1XY=`
 
-**Orion 2**
+**Tessera 2**
 - Public Key
   - `KkOjNLmCI6r+mICrC6l+XuEDjFEzQllaMQMpWLl4y1s=`
 
-**Orion 3**
+**Tessera 3**
 - Public Key
   - `qaBVuA+nG7Yt+kru6CGI2VMxOBAK7b1KNmiJuInHtwc=`
 
@@ -133,20 +135,20 @@ LOG4J_CONFIGURATION_FILE=config/besu/log4j.xml besu --config-file config/besu/be
 
 ### Deleting data
 
-There is a helper script to delete all the data from Besu and Orion nodes. Just run:
+There is a helper script to delete all the data from Besu and Tessera nodes. Just run:
 ```
 ./scripts/delete_databases.sh
 ```
 ## References
 
 - [Besu GitHub project](https://github.com/hyperledger/besu/)
-- [Besu 1.5.0 Docs](https://besu.hyperledger.org/en/1.5.0/)
-- [Orion GitHub project](https://github.com/PegaSysEng/orion)
-- [Orion 1.6.0 Docs](https://docs.orion.pegasys.tech/en/1.6.0/)
-- [EthSigner GitHub project](https://github.com/PegaSysEng/ethsigner)
-- [EthSigner 0.6.0 Docs](https://docs.ethsigner.pegasys.tech/en/0.6.0/)
-- [web3js-eea GitHub project](https://github.com/PegaSysEng/web3js-eea)
-- [Permissioning Smart Contracts](https://github.com/PegaSysEng/permissioning-smart-contracts)
+- [Besu Docs](https://besu.hyperledger.org/)
+- [Tessera GitHub project](https://github.com/ConsenSys/Tessera)
+- [Tessera Docs](https://docs.tessera.consensys.net/)
+- [EthSigner GitHub project](https://github.com/ConsenSys/ethsigner)
+- [EthSigner Docs](https://docs.ethsigner.consensys.net/)
+- [web3js-eea GitHub project](https://github.com/ConsenSys/web3js-eea)
+- [Permissioning Smart Contracts](https://github.com/ConsenSys/permissioning-smart-contracts)
 
 ## Disclaimer
 

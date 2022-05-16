@@ -14,10 +14,10 @@ module.exports = async () => {
   let transaction = {
     data: deployContractData,
     privateKey: config.accounts[0].privateKey,
-    privateFrom: config.besu1.orion.publicKey,
+    privateFrom: config.besu1.enclave.publicKey,
     privateFor: [
-      config.besu1.orion.publicKey,
-      config.besu2.orion.publicKey
+      config.besu1.enclave.publicKey,
+      config.besu2.enclave.publicKey
     ]
   };
 

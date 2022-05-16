@@ -11,7 +11,7 @@
     "besu1": {
         "jsonrpc": "http://localhost:8545",
         "websocket": "http://localhost:8546",
-        "orion": {
+        "enclave": {
             "clientApi": "http://127.0.0.1:8881",
             "publicKey": "GGilEkXLaQ9yhhtbpBT03Me9iYa7U/mWXxrJhnbl1XY="
         }
@@ -19,7 +19,7 @@
     "besu2": {
         "jsonrpc": "http://localhost:8555",
         "websocket": "http://localhost:8556",
-        "orion": {
+        "enclave": {
             "clientApi": "http://127.0.0.1:8882",
             "publicKey": "KkOjNLmCI6r+mICrC6l+XuEDjFEzQllaMQMpWLl4y1s="
         }
@@ -27,7 +27,7 @@
     "besu3": {
         "jsonrpc": "http://localhost:8565",
         "websocket": "http://localhost:8566",
-        "orion": {
+        "enclave": {
             "clientApi": "http://127.0.0.1:8883",
             "publicKey": "qaBVuA+nG7Yt+kru6CGI2VMxOBAK7b1KNmiJuInHtwc="
         }
