@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group 'com.lsoftware'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.web3j:core:5.0.0'
+    implementation 'org.web3j:besu:5.0.0'
+    implementation 'org.web3j:utils:5.0.0'
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+    useJUnitPlatform()
+}
