@@ -4,6 +4,13 @@
 **/*besu2/data
 **/*besu3/data
 
+**/*tessera1/tessera1.mv.db
+**/*tessera1/tessera1.trace.db
+**/*tessera2/tessera2.mv.db
+**/*tessera2/tessera2.trace.db
+**/*tessera3/tessera3.mv.db
+**/*tessera3/tessera3.trace.db
+
 **/*orion1/routerdb
 **/*orion2/routerdb
 **/*orion3/routerdb
